@@ -1,0 +1,23 @@
+.error {
+        border: 2px solid red;
+    }
+
+.error-message {
+        color: red;
+    }
+
+                form input, textarea {
+                    margin-left: 100px;
+                }
+        
+                #gender {
+                    margin-left: 100px;
+                }
+        
+                label {
+                    float: left;
+                    clear: left;
+                    width: 100px;
+                    text-align: left;
+                    margin-bottom: 10px;
+                }

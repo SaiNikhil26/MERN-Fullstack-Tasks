@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task-4 JS</title>
+</head>
+<style>
+        h1{
+        text-align: center;
+        }
+</style>
+<body>
+    <h1>JavaScript Task4: Show Date and Time</h1>
+    <button id="showDateButton">Show Date</button>
+    <br><br>
+    <button id="showTimeButton">Show Time</button>
+    <p id="output"></p>
+
+    <script>
+        const dateButton = document.getElementById("showDateButton");
+        const timeButton = document.getElementById("showTimeButton");
+        const outputElement = document.getElementById("output");
+
+        dateButton.addEventListener("click", () => {
+            const currentDate = new Date();
+            const dateString = currentDate.toDateString();
+            outputElement.textContent = "Date: " + dateString;
+        });
+
+        timeButton.addEventListener("click", () => {
+            const currentTime = new Date();
+            const timeString = currentTime.toLocaleTimeString();
+            outputElement.textContent = "Time: " + timeString;
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #myImg {
+            position: relative;
+            left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript Automated Animation</h1>
+    <form>
+        <p>Click the buttons below to manage the automated animation</p>
+        <img id="myImg" src="train1.jpg" height="150px" width="150px" />
+        <br /><br />
+        <input type="button" value="Start" onclick="moveRight();" />
+        <input type="button" value="Stop" onclick="stop();" />
+    </form>
+
+    <script>
+        var imgObj = null;
+        var animate;
+        var maxLeft = window.innerWidth - 150; // Adjust the value based on the image width
+
+        function init() {
+            imgObj = document.getElementById('myImg');
+            imgObj.style.position = 'relative';
+            imgObj.style.left = '0px';
+        }
+
+        function moveRight() {
+            var currentLeft = parseInt(imgObj.style.left) || 0;
+            if (currentLeft < maxLeft) {
+                imgObj.style.left = currentLeft + 2 + 'px'; // Adjust the speed here by changing the value
+                animate = setTimeout(moveRight, 50); // Increase the interval for slower speed
+            } else {
+                clearTimeout(animate);
+            }
+        }
+
+        function stop() {
+            clearTimeout(animate);
+        }
+
+        window.onload = init;
+    </script>
+</body>
+
+</html>

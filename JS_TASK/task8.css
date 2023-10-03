@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: rgb(254, 254, 254);
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    text-shadow: rgba(97, 207, 183, 1) 0px 0px 40px;
+}
+
+.card {
+    width: 500px;
+    box-shadow: -1px 6px 15px -6px rgba(11, 10, 10, 0.43);
+
+}

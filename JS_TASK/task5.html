@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task-5 JS</title>
+</head>
+<link rel="stylesheet" href="task5.css">
+<body>
+    <form id="myForm" onsubmit="return validateForm()">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <div class="error-message" id="nameError"></div>
+        </div>
+        <br><br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            <div class="error-message" id="emailError"></div>
+        </div>
+        <br><br>
+        <div>
+            <label for="website">Website:</label>
+            <input type="text" id="website" name="website">
+            <div class="error-message" id="websiteError"></div>
+        </div>
+        <br><br>
+        <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <div class="error-message" id="messageError"></div>
+        </div>
+        <br><br>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+<script src="task5.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!--hoverable Side bar navigation buttons -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoverable Navigation Buttons</title>
+    <style>
+        /* Basic styling for the navigation bar */
+        p.heading1{
+            display: block;
+            text-align:center;
+            
+            font-size: 35px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        p.heading2{
+            display: block;
+            text-align: center;
+            
+            font-size: 24px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        ul.navbar {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            margin-left: 100px;
+            padding:0px;
+        }
+
+        /* Style for individual navigation items */
+        ul.navbar li {
+            display: inline;
+            margin-right: 15px;
+            padding-top: 55px;
+        }
+
+        /* Style for the links within the navigation items */
+        ul.navbar li a {
+            text-decoration: none;
+            padding: 16px 20px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        /* Change the link background color on hover */
+        ul.navbar li a:hover {
+            background-color: #74b300;
+            font-size: 23px;
+        }
+
+    </style>
+</head>
+<body>
+    <p class="heading1">Hoverable sidebar navigation buttons</p>
+    <p class="heading2">Pls hover over the sidebar </p>
+    <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+    </ul>
+</body>
+</html>

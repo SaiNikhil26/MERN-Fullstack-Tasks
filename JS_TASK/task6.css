@@ -1,0 +1,53 @@
+.center-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 100%;
+    max-width: 400px; /* Limit card width for smaller screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+h5{
+    font-family: 'Lobster Two';
+    font-weight: bold;
+    font-size: 33px;
+}
+.card-title {
+    text-align: center; /* Center the card title */
+}
+label{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:17px;
+}
+input{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* Center the login button */
+.login-btn {
+    display: flex;
+    justify-content: center;
+}
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Custom CSS to make the button span the entire width */
+.btn-login {
+    margin-top:15px;
+    width: 100%;
+}
+
+/* Error message style */
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+
+ 
